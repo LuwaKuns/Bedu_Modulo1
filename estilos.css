@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+    color: rgb(19, 111, 114);
+    font-family: "Alegreya", serif;
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+
+h4 {
+    text-align: center;
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+p {
+    color: gray;
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+input {
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+    width: 60%;
+    max-width: 250px;
+}
+
+
+
+input, button {
+    text-align: center;
+    height: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background-color: rgb(19, 111, 114);
+    color: white;
+    border: rgb(19, 111, 114);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -10px;
+    padding: 6px 20px;
+    height: 30px;
+}
+
+form {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(243, 240, 233);
+}
