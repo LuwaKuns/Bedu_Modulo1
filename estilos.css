@@ -144,6 +144,10 @@ body {
     color: #67b54b;
 }
 
+.actions a:hover {
+    color: #65df39;
+}
+
 .actions > button{
     text-decoration: none;
     color: white;
@@ -154,6 +158,10 @@ body {
     text-align: center;
 }
 
+.actions > button:hover {
+    background-color: #24630d;
+    color: #65df39;
+}
 .promo{
     display: flex;
     max-width: 70%;
