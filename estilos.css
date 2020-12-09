@@ -12,7 +12,7 @@ body{
 main {
     margin-top: 285px;
     text-align: center;
-  }
+}
 
 a{
     text-decoration: none;
@@ -214,4 +214,80 @@ body {
 .signup-form {
     display: flex;
     justify-content: flex-start;
+}
+
+.features{
+    display:grid;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+    padding: 5% 10%;
+    background-color:  rgb(19, 111, 114);
+}
+
+/* Se definió la altura para que la algura sea de 330 de cada fila, además grid-template te permite poner primero columnas y luego filas */
+
+.features .feature-card{
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid rgb(203, 250, 242);
+    margin: 0 15px 30px 15px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.features .feature-card .feature-content{
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+}
+
+.features .feature-card .feature-content > * {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.features .feature-card .feature-content img {
+    width: 50px;
+}
+
+figure {
+    margin: 0 0 1rem;
+    text-align: left;
+}
+
+.features .feature-card .feature-content h3{
+    font-size: 24px;
+    color: rgb(41, 37, 37);
+    font-weight: 400;
+}
+
+.features .feature-card .feature-content p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.features .feature-card .feature-content a{
+    color: #67b54b;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+.features .feature-card .feature-content a:hover {
+    color: #65df39;
+}
+
+.features .feature-card .feature-image{
+    flex: 1;
+    position: relative;
+    width: 40%;
+    right: -50px;
+    height: 80%;
+}
+
+.features .feature-card .feature-image figure,
+.features .feature-card .feature-image img {
+    margin-top: 0;
+    height: 100%;
 }
