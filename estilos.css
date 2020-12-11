@@ -9,15 +9,11 @@ body{
     padding: 0;
 }
 
-main {
-    margin-top: 285px;
-    text-align: center;
-}
-
 a{
     text-decoration: none;
     color:  #025157;
 }
+
 h1 {
     text-align: center;
     color: rgb(19, 111, 114);
@@ -43,8 +39,33 @@ p {
     text-align: center;
 }
 
-figure {
+body{
+    display: block;
+}
+
+main {
+    margin-top: 285px;
     text-align: center;
+}
+
+figure {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.banner{
+    text-align: center;
+    width: 100%;
+}
+
+.intro > img{
+    width: 70%;
+    text-align: center;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
 }
 
 input {
@@ -142,6 +163,7 @@ body {
 
 .actions a {
     color: #67b54b;
+    font-weight: 800;
 }
 
 .actions a:hover {
@@ -159,7 +181,7 @@ body {
 }
 
 .actions > button:hover {
-    background-color: #24630d;
+    background-color: rgb(19, 111, 114);
     color: #65df39;
 }
 .promo{
@@ -249,11 +271,6 @@ body {
     width: 50px;
 }
 
-figure {
-    margin: 0 0 1rem;
-    text-align: left;
-}
-
 .features .feature-card .feature-content h3{
     font-size: 24px;
     color: rgb(41, 37, 37);
@@ -290,4 +307,99 @@ figure {
 .features .feature-card .feature-image img {
     margin-top: 0;
     height: 100%;
+}
+
+@media (max-width: 575px) {
+    .navbar, .actions {
+    display: none;
+    }
+    main{
+        margin-top: 130px;
+    }
+    main > form > button{
+    height: 32px;
+    }
+    main > form > button, input{
+        overflow: visible;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .banner > img {
+        width: 70%;
+        text-align: center;
+    }
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+        margin-top: 60px;
+    }
+    
+    .publishvideo > video {
+        width: 100%;
+    }
+    .publishvideo > figure {
+        margin-top: 0;
+    }
+
+    .publish {
+        margin-top: 50px;
+    }
+    
+    .publish > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    .publish > form {
+        flex-direction: row;
+    }
+    
+    .publish > form {
+        height: 50px;
+        margin-top: -5px;
+    }
+
+    .publish > form > button, input {
+        height: 60%;
+        border-radius: 8px, 8px, 8px, 0;
+        overflow: visible;
+        font-family: "Open Sans", sans-serif;
+    }
+    .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .feature-image {
+        display: none;
+    }
+}
+
+
+/*
+input {
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+    width: 60%;
+    max-width: 250px;
+    text-align: start;
+}
+
+button, input {
+    height: 100%;
+    border-radius: 8px;
+    overflow: visible;
+    font-family: "Open Sans", sans-serif;
+}
+
+button {
+    background-color: rgb(19, 111, 114);
+    color: white;
+    border: rgb(19, 111, 114);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -10px;
+    padding: 6px 20px;
+    height: 55px;
+    text-align: center;
 }
